@@ -1,0 +1,114 @@
+html,body{
+    font-family: 'Raleway', sans-serif;
+    color:#777777;
+    font-weight:300;
+    padding:0;
+    margin:0;
+}
+
+/*resets and general classes*/
+
+/*more specific classes*/
+
+.text-muted{
+    color:#BCBB88;
+    padding-top:2%;
+    padding-bottom:2%;
+}
+
+.text-thin{
+    font-weight:200;
+}
+
+.title-super{
+    font-size:2.5rem;
+    text-transform:uppercase;
+}
+
+.title-logo{
+    margin-top:20px;
+}
+.title-role{
+  text-align:center;
+}
+
+.flower{
+  min-height:300px;
+}
+
+
+  .project img{
+    margin: 0 auto;
+  }
+  h1,
+  h2,
+  h4{
+    text-align:center;
+  }
+  .title-logo{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .text{
+    position:relative;
+    /*display:flex;*/
+    /*margin-left:auto;*/
+    /*margin-right:auto;*/
+    font-size:1.5rem;
+    color:grey;
+    font-weight:bold;
+    text-align:center;
+    height:50px;
+    visibility: hidden;
+    top:-100px;
+    margin:0;
+    padding:;
+  }
+.project a{
+  text-decoration:none;
+}
+
+
+
+.project:hover img{
+  opacity:0.3;
+    /* Webkit for Chrome and Safari */
+  -webkit-transform: scale(1.1, 1.1); // This is the enlarged size scale of the image.
+  -webkit-transition-duration: 500ms;
+  -webkit-transition-timing-function: ease-out;
+ 
+  /* Webkit for Mozila Firefox */
+  -moz-transform: scale(1.1, 1.1);
+  -moz-transition-duration: 500ms;
+  -moz-transition-timing-function: ease-out;
+ 
+  /* Webkit for IE( Version: 11, 10 ) */
+  -ms-transform: scale(1.10, 1.10);
+  -ms-transition-duration: 500ms;
+  -ms-transition-timing-function: ease-out;
+}
+
+
+.project:hover .text{
+  visibility: visible;
+  color:#FF7F50;
+  /*border:solid 8px #404040;*/
+}
+/*.project:hover{
+  border:5px solid grey;
+}*/
+
+
+/*@media(max-width:@screen-sm-max){
+  .project .text{
+    font-size:1.5rem;
+    top:-200px;
+  }
+}
+@media(max-width:@screen-md-max){
+  .project .text{
+    font-size:1.5rem;
+    top:-250px;
+  }
+}*/
