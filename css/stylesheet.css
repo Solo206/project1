@@ -1,78 +1,104 @@
-html,body{
-    font-family: 'Raleway', sans-serif;
-    color:#777777;
-    font-weight:300;
-    padding:0;
-    margin:0;
+html,
+body {
+    font-family: 'Monserrat', sans-serif;
+    color: #777777;
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
 }
+
+  h1,
+  h2,
+  h4{
+    text-align: center;
+  }
 
 /*resets and general classes*/
 
 /*more specific classes*/
 
-.text-muted{
-    color:#BCBB88;
-    padding-top:2%;
-    padding-bottom:2%;
+/*header section*/
+
+/*header logo*/
+
+.title-logo {
+    position: relative;
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+/*hold section for name and role*/
+
+.title-holder {
+  position: relative;
+  margin-top: -5px;
+  margin-bottom: -15px;
 }
 
-.text-thin{
-    font-weight:200;
+.title-name {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-family: 'Lato', serif;
+    text-align: center;
+    font-weight: 200;
 }
 
-.title-super{
-    font-size:2.5rem;
-    text-transform:uppercase;
-}
-
-.title-logo{
-    margin-top:20px;
-}
-.title-role{
-  text-align:center;
-}
-
-.flower{
-  min-height:300px;
+.title-role {
+  position: relative;
+  top: -25px;
+  text-align: center;
+  font-size: 1.3rem;
+  font-family: 'Monserrat', serif;
 }
 
 
-  .project img{
+/*flower picture section*/
+
+.flower {
+  min-height: 400px;
+}
+
+/*feature text section*/
+
+.text-feature {
+    color: grey;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 1.5rem;
+}
+
+/*wireframes,mockups, prototypes section*/
+
+/*overlay text over image*/
+
+.project .text {
+  position: relative;
+  font-size: 1.5rem;
+  color: grey;
+  font-weight: bold;
+  text-align: center;
+  height: 50px;
+  visibility: hidden;
+  top: -125px;
+  margin: 0;
+}
+
+.project a {
+  text-decoration: none;
+}
+
+/*image*/
+
+.project img{
     margin: 0 auto;
   }
-  h1,
-  h2,
-  h4{
-    text-align:center;
-  }
-  .title-logo{
-    display:block;
-    margin-left:auto;
-    margin-right:auto;
-  }
-  .text{
-    position:relative;
-    /*display:flex;*/
-    /*margin-left:auto;*/
-    /*margin-right:auto;*/
-    font-size:1.5rem;
-    color:grey;
-    font-weight:bold;
-    text-align:center;
-    height:50px;
-    visibility: hidden;
-    top:-100px;
-    margin:0;
-    padding:;
-  }
-.project a{
-  text-decoration:none;
-}
 
-
+/*image hover action*/
 
 .project:hover img{
-  opacity:0.3;
+  opacity: 0.3;
     /* Webkit for Chrome and Safari */
   -webkit-transform: scale(1.1, 1.1); // This is the enlarged size scale of the image.
   -webkit-transition-duration: 500ms;
@@ -92,23 +118,111 @@ html,body{
 
 .project:hover .text{
   visibility: visible;
-  color:#FF7F50;
-  /*border:solid 8px #404040;*/
+  color: #FF7F50;
 }
-/*.project:hover{
-  border:5px solid grey;
-}*/
 
+/*copyright*/
 
-/*@media(max-width:@screen-sm-max){
-  .project .text{
-    font-size:1.5rem;
-    top:-200px;
+.copy {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/*social media*/
+
+.social {
+  position: relative;
+  text-align: center;
+}
+
+.fa-square-o {
+  color: lightblue;
+}
+.fa-twitter:hover, .fa-google-plus:hover, .fa-github-alt:hover, .fa-linkedin:hover {
+
+/* chrome version */
+
+  -webkit-transform: scale(1.1, 1.1); // This is the enlarged size scale of the image.
+  -webkit-transition-duration: 500ms;
+  -webkit-transition-timing-function: ease-out;
+  
+/*  mozilla version  */
+
+  -moz-transform: scale(1.1, 1.1);
+  -moz-transition-duration: 500ms;
+  -moz-transition-timing-function: ease-out;
+    
+  /*  internet explorer */
+  -ms-transform: scale(1.10, 1.10);
+  -ms-transition-duration: 500ms;
+  -ms-transition-timing-function: ease-out;
+
+    color: lightblue;
+}
+
+/*screen size larger than 500*/
+
+@media (min-width:500px){
+  .project .text {
+    top: -250px;
+    font-size: 3rem;
   }
 }
-@media(max-width:@screen-md-max){
-  .project .text{
-    font-size:1.5rem;
-    top:-250px;
+
+/*screen size larger than 768*/
+
+@media (min-width: 768px){
+  .title-logo {
+    left: -100px;
   }
-}*/
+  .project .text{
+    font-size: 2rem;
+    top: -150px;
+  }
+}
+
+/*screen size larger than 992*/
+
+@media (min-width: 992px){
+  .title-logo{
+    position: relative;
+    left: -150px;
+  }
+  .project .text{
+    top: -225px;
+    font-size: 2.5rem; 
+  }
+}
+
+/*screen size larger than 1200*/
+
+@media (min-width: 1200px){
+  .title-logo {
+    position: relative;
+    display: block;
+    left: -200px;
+  }
+  .title-name, .title-role{
+    text-align: right;
+  }
+  .text-feature {
+    font-family: 'Monserrat';
+    font-size: 2rem;
+    padding: 0;
+  }
+  .project .text {
+    position:relative;
+    top:-150px;
+    font-size: 3em;
+  }
+  .copy {
+    position: relative;
+    left: -150px;
+    vertical-align: middle;
+  }
+  .social {
+    position: relative;
+    right: -150px;
+    vertical-align: middle;
+  }
+}

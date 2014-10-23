@@ -11,12 +11,15 @@
 
 	<!-- personal stylesheet -->
 	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-	<link href='//fonts.googleapis.com/css?family=Raleway:400,200' rel='stylesheet' type='text/css'>
-	<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
-
+	<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	<link href='http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css' rel="stylesheet">
+<!-- 	<link rel="stylesheet" href="css/font-awesome.min.css">
+ -->
 	<title>Project 1</title>
 </head>
 <body>
+	<!-- nav bar -->
 	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 		<div class="container">
 			<div class="navbar-header">
@@ -47,94 +50,120 @@
 		</div>
 	</div>
 	
-
-
+	<!-- main section -->
 	<div class="container main">
-	<header class="page-header row">
-		<!-- contains logo and title -->
-		<div class="col-xs-12">
-				<img src="img/javasalts1.png" class="img-responsive title-logo" alt="image">
-		</div>
-		<div class="col-xs-12">
-				<h1 class="title-super text-thin">James Kim</h1>
-				<h3 class="title-role">Front-End Ninja</h3>
-		</div>
-	</header>
-<!-- 	<div class="row">
-		<div class="col-md-12">
-			<hr>
-		</div>
-	</div> -->
-	<div class="row">
-		<!-- image of html pic -->
-		<div class="col-xs-12">
-			<img src="img/flower.png" class="flower img-responsive" alt="image">
-		</div>
-	</div>
 	
-	<div class="row">
-		<!-- Featured work text -->
-		<div class="col-xs-12">
-			<h2 class="text-muted">
-				Featured Work
-			</h2>
+		<!-- header -->
+		<header class="page-header row">
+			<!-- contains logo and title -->
+			<div class="col-xs-12 col-sm-6 col-med-6">
+					<img src="img/javasalts1.png" class="img-responsive title-logo" alt="image">
+			</div>
+			<div class="col-xs-12 col-sm-6 col-med-6 title-holder">
+					<h1 class="title-name">James Kim</h1>
+					<h3 class="title-role">Front-End Salter</h3>
+			</div>
+		</header>
+
+		<!-- flower pic section-->
+		<div class="row">
+			<div class="col-xs-12">
+				<img src="img/flower.png" class="flower img-responsive" alt="image">
+			</div>
 		</div>
-	</div>
-	<div class="row">
-		<!-- 3 columns of pics and text -->
-		<div class="col-xs-12 project">
-				<div class="row">
-					<div class="col-xs-12">
-						<img src="img/iv_wire.png" class="img-responsive hover"  alt="image">
-					</div>
-				</div>
-				<!-- <div></div> -->
-
-				<div class="row">
-					<div class="col-xs-12">
-					<!-- <div class="jumbotron"> -->
-						<h3 class="text img-responsive">Wireframes</h3>
-					<!-- </div> -->
-					</div>
-				</div>
+		
+		<!-- featured work section -->
+		<div class="row">
+			<!-- Featured work text -->
+			<div class="col-xs-12">
+				<h2 class="text-feature">
+					Featured Work
+				</h2>
+			</div>
 		</div>
-		<div class="col-xs-12 project">
-				<div class="row">
-					<div class="col-xs-12">
-						<img src="img/shoppingcart.png" class="img-responsive hover" alt="image">
+
+		<!-- row of wireframe, mockups, prototypes -->
+		<div class="row">
+
+			<!-- wireframe section -->
+			<section class="col-xs-12 col-sm-6 col-lg-4 project">
+					<div class="row">
+						<div class="col-xs-12">
+							<img src="img/iv_wire.png" class="img-responsive hover"  alt="image">
+						</div>
 					</div>
-				</div>
-				<!-- <div></div> -->
 
-				<div class="row">
-					<div class="col-xs-12">
-					<!-- <div class="jumbotron"> -->
-						<h3 class="text img-responsive">Mockups</h3>
-					<!-- </div> -->
+					<div class="row">
+						<div class="col-xs-12">
+							<h3 class="text img-responsive">Wireframes</h3>
+						</div>
 					</div>
-				</div>
-		</div>
-		<div class="col-xs-12 project">
-				<div class="row">
-					<div class="col-xs-12">
-						<img src="img/Beachbody.png" class="img-responsive hover"  alt="image">
+			</section>
+			
+			<!-- mockup section -->
+			<section class="col-xs-12 col-sm-6 col-lg-4 project">
+					<div class="row">
+						<div class="col-xs-12">
+							<img src="img/shoppingcart.png" class="img-responsive hover" alt="image">
+						</div>
 					</div>
-				</div>
-				<!-- <div></div> -->
 
-				<div class="row">
-					<div class="col-xs-12">
-					<!-- <div class="jumbotron"> -->
-						<h3 class="text img-responsive">Prototypes</h3>
-					<!-- </div> -->
+					<div class="row">
+						<div class="col-xs-12">
+							<h3 class="text img-responsive">Mockups</h3>
+						</div>
 					</div>
-				</div>
-		</div>
-	</div>
-	</div>
+			</section> <!--end of mockups section-->
 
+			<!-- prototypes section -->
+			<section class="col-xs-12 col-sm-6 col-lg-4 project">
+					<div class="row">
+						<div class="col-xs-12">
+							<img src="img/Beachbody.png" class="img-responsive hover"  alt="image">
+						</div>
+					</div>
 
+					<div class="row">
+						<div class="col-xs-12">
+							<h3 class="text img-responsive">Prototypes</h3>
+						</div>
+					</div>
+			</section> <!--end of prototypes section-->
 
+		</div> <!--end of wireframes,mockups, prototypes section -->
+
+		<!-- copyright and social media -->		
+		
+		<footer class="row">
+			<div class="col-xs-12 col-md-6 copy-hold">
+				<div class="copy">&copy; JavaSalts Inc., 2014</div>
+			</div>
+			<div class="col-xs-12 col-md-6 social">
+				<span class="fa-stack fa-2x">
+				  <i class="fa fa-square-o fa-stack-2x"></i>
+				  <i class="fa fa-twitter fa-stack-1x "></i>
+				</span>
+				<span class="fa-stack fa-2x">
+				  <i class="fa fa-square-o fa-stack-2x"></i>
+				  <i class="fa fa-google-plus fa-stack-1x "></i>
+				</span>
+				<span class="fa-stack fa-2x">
+				  <i class="fa fa-square-o fa-stack-2x"></i>
+				  <i class="fa fa-linkedin fa-stack-1x "></i>
+				</span>
+				<span class="fa-stack fa-2x">
+				  <i class="fa fa-square-o fa-stack-2x"></i>
+				  <i class="fa fa-github-alt fa-stack-1x "></i>
+				</span>
+			</div>
+		</footer>
+
+	</div> <!--end of container-->
+
+<!-- scripts for bootstrap and jquery -->
+  <script src="http://code.jquery.com/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  
 </body>
 </html>
 
